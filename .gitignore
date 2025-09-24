@@ -1,0 +1,9 @@
+# Quorum Studio
+Build/
+Run/
+*.DS_Store
+
+# Intellij
+.idea/
+*.iml
+*.iws
