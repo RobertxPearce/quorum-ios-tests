@@ -1,0 +1,69 @@
+//----------------------------------------
+//             Basic UI Tests
+//----------------------------------------
+
+use Libraries.Interface.Forms.Form
+use Libraries.Interface.Forms.Page
+use Libraries.Interface.Forms.Grouping
+use Libraries.Interface.Forms.FormLabel
+use Libraries.Interface.Controls.TextBox
+use Libraries.Interface.Controls.TextField
+use Libraries.Interface.Controls.ToggleButton
+use Libraries.Interface.Controls.RadioButton
+use Libraries.Interface.Forms.Banner
+
+Form form
+Page page = form:GetMainPage()
+
+// Labels for testing
+page:AddBanner("Label Test")
+page:AddLabel("Label 1")
+page:AddLabel("Label 2")
+page:AddLabel("Label 3")
+
+// Textboxes for testing (TextBoxIOS.java)
+page:AddBanner("Text Box Test")
+TextBox textbox = page:GetTextBox("Textbox")
+page:AddTextBox("textbox")
+
+// Text Field for testing (TextFieldIOS.java)
+page:AddBanner("Test Field Test")
+TextField textfield = page:GetTextField("TextField")
+page:AddTextField("textfield")
+
+// Buttons for testing (ButtonIOS.java)
+page:AddBanner("Button Test")
+page:AddButton("Button 1")
+page:AddButton("Button 2")
+page:AddButton("Button 3")
+
+// Toggle Buttons for testing (ToggleButtonIOS.java)
+page:AddBanner("Toggle Button Test")
+Grouping tbgroup = page:AddGrouping("ToggleButtons")
+ToggleButton togglebutton = page:GetToggleButton("Toggle")
+tbgroup:AddToggleButton("1")
+tbgroup:AddToggleButton("2")
+tbgroup:AddToggleButton("3")
+
+// Radio Button for testing (RadioButtonIOS.java)
+page:AddBanner("Radio Button Test")
+Grouping rbgroup = page:AddGrouping("Radio")
+RadioButton radioutton = rbgroup:AddRadioButton("1")
+rbgroup:AddRadioButton("2")
+rbgroup:AddRadioButton("3")
+
+// Checkboxs for testing (CheckboxIOS.java)
+page:AddBanner("Checkbox Test")
+page:AddCheckbox("Checkbox 1")
+page:AddCheckbox("Checkbox 2")
+page:AddCheckbox("Checkbox 3")
+
+// Item for testing (ItemIOS.java) DONT DO THIS YET
+
+
+// Display the forms
+form:Display()
+
+//----------------------------------------
+//              END OF FILE
+//----------------------------------------
