@@ -7,3 +7,11 @@ Run/
 .idea/
 *.iml
 *.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
