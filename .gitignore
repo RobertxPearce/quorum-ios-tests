@@ -1,7 +1,12 @@
 # Quorum Studio
 Build/
 Run/
-*.DS_Store
+**/Build/
+**/Run/
+**/Deploy/
+**/Installer/*.exe
+**/Library/Compiled/
+!**/Library/Compiled/License.txt
 
 # Intellij
 .idea/
