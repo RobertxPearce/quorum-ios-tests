@@ -1,0 +1,24 @@
+//----------------------------------------
+//      Button Test (ButtonIOS.java)
+//----------------------------------------
+
+use Libraries.Interface.Forms.Form
+use Libraries.Interface.Forms.Page
+use Libraries.Interface.Forms.Banner
+
+Form form
+Page page = form:GetMainPage()
+
+// Ungrouped buttons
+page:AddBanner("Button Test")
+page:AddButton("Button 1")
+page:AddButton("Button 2")
+page:AddButton("Button 3")
+
+
+// Display the forms
+form:Display()
+
+//----------------------------------------
+//              END OF FILE
+//----------------------------------------
