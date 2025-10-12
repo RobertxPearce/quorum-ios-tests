@@ -5,16 +5,25 @@
 use Libraries.Interface.Forms.Form
 use Libraries.Interface.Forms.Page
 use Libraries.Interface.Forms.Banner
+use Libraries.Interface.Forms.Grouping
+use Libraries.Interface.Controls.ToggleButton
 
 Form form
 Page page = form:GetMainPage()
 
-// Ungrouped buttons
+// Buttons for testing (ButtonIOS.java)
 page:AddBanner("Button Test")
 page:AddButton("Button 1")
 page:AddButton("Button 2")
 page:AddButton("Button 3")
 
+// Toggle Buttons for testing (ToggleButtonIOS.java)
+page:AddBanner("Toggle Button Test")
+Grouping tbgroup = page:AddGrouping("ToggleButtons")
+ToggleButton togglebutton = page:GetToggleButton("Toggle")
+tbgroup:AddToggleButton("1")
+tbgroup:AddToggleButton("2")
+tbgroup:AddToggleButton("3")
 
 // Display the forms
 form:Display()
