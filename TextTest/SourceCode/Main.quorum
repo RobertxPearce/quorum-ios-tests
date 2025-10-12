@@ -1,0 +1,31 @@
+//---------------------------------------------------------------
+//                      Text Test
+// (TextBoxIOS.java / TextFieldIOS.java / TextAdjust.java)
+//---------------------------------------------------------------
+
+use Libraries.Interface.Forms.Form
+use Libraries.Interface.Forms.Page
+use Libraries.Interface.Forms.FormLabel
+use Libraries.Interface.Controls.TextBox
+use Libraries.Interface.Forms.Banner
+
+Form form
+Page page = form:GetMainPage()
+
+// Labels for testing
+page:AddBanner("Label Test")
+page:AddLabel("Label 1")
+page:AddLabel("Label 2")
+page:AddLabel("Label 3")
+
+// Textboxes for testing (TextBoxIOS.java)
+page:AddBanner("Text Box Test")
+TextBox textbox = page:GetTextBox("Textbox")
+page:AddTextBox("textbox")
+
+// Display the forms
+form:Display()
+
+//---------------------------------------------------------------
+//                        END OF FILE
+//---------------------------------------------------------------
