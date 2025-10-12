@@ -1,0 +1,16 @@
+{
+    "AndroidAssets" : "media",
+    "DevelopmentEnvironmentVersion" : "Quorum Studio 7.3.0",
+    "ExecutableName" : "Default",
+    "IOSAssets" : "media",
+    "IOS_BUNDLE" : "org.quorumlanguage",
+    "IOS_DEVICE" : "iPhone 14 Simulator",
+    "ImageSheetBuildPath" : "resources",
+    "ImageSheetEnabled" : false,
+    "ImageSheetRebuildOnCompile" : false,
+    "Main" : "/SourceCode/Main.quorum",
+    "Project Version" : "1.0",
+    "ProjectName" : "TextTest",
+    "ProjectType" : "JavaType",
+    "iosVersion" : "15.0"
+}
