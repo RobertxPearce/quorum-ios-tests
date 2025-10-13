@@ -7,6 +7,7 @@ use Libraries.Interface.Forms.Form
 use Libraries.Interface.Forms.Page
 use Libraries.Interface.Forms.FormLabel
 use Libraries.Interface.Controls.TextBox
+use Libraries.Interface.Controls.TextField
 use Libraries.Interface.Forms.Banner
 
 Form form
@@ -22,6 +23,11 @@ page:AddLabel("Label 3")
 page:AddBanner("Text Box Test")
 TextBox textbox = page:GetTextBox("Textbox")
 page:AddTextBox("textbox")
+
+// Text Field for testing (TextFieldIOS.java)
+page:AddBanner("Test Field Test")
+TextField textfield = page:GetTextField("TextField")
+page:AddTextField("textfield")
 
 // Display the forms
 form:Display()
