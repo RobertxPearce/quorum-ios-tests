@@ -7,6 +7,7 @@ use Libraries.Interface.Forms.Page
 use Libraries.Interface.Forms.Banner
 use Libraries.Interface.Forms.Grouping
 use Libraries.Interface.Controls.ToggleButton
+use Libraries.Interface.Controls.RadioButton
 
 Form form
 Page page = form:GetMainPage()
@@ -24,6 +25,13 @@ ToggleButton togglebutton = page:GetToggleButton("Toggle")
 tbgroup:AddToggleButton("1")
 tbgroup:AddToggleButton("2")
 tbgroup:AddToggleButton("3")
+
+//Radio Buttons For Testing (RadioButtonIOS.java)
+page:AddBanner("RadioButton Test")
+Grouping rbgroup = AddGrouping("Radio")
+RadioButton radioButton = rbgroup:AddRadioButton("1")
+rbgroup:AddRadioButton("2")
+rbgroup:AddRadioButton("3")
 
 // Display the forms
 form:Display()
