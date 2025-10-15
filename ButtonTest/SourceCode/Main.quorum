@@ -28,7 +28,7 @@ tbgroup:AddToggleButton("3")
 
 //Radio Buttons For Testing (RadioButtonIOS.java)
 page:AddBanner("RadioButton Test")
-Grouping rbgroup = AddGrouping("Radio")
+Grouping rbgroup = page:AddGrouping("Radio")
 RadioButton radioButton = rbgroup:AddRadioButton("1")
 rbgroup:AddRadioButton("2")
 rbgroup:AddRadioButton("3")
