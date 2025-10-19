@@ -24,7 +24,7 @@ page:AddBanner("Text Box Test")
 
 TextBox textbox1 = page:GetTextBox("Textbox")
 textbox1:SetBackgroundColor(color:White())
-textbox1:SetText("Please enter Name")
+textbox1:SetText("Please Enter Name")
 textbox1:SetPosition(0, 0)
 textbox1:SetSize(300, 300)
 textbox1:SetMoveFocusOnTab(true)
@@ -39,8 +39,8 @@ textfield:SetMoveFocusOnTab(true)
 
 textbox1:SetNextFocus(textfield)
 textbox1:SetPreviousFocus(textfield)
-textfield:SetNextFocus(box1)
-textfield:SetPreviousFocus(box1)
+textfield:SetNextFocus(textbox1)
+textfield:SetPreviousFocus(textbox1)
 
 page:AddTextField("textfield")
 
