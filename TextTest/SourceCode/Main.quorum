@@ -21,12 +21,27 @@ page:AddLabel("Label 3")
 
 // Textboxes for testing (TextBoxIOS.java)
 page:AddBanner("Text Box Test")
-TextBox textbox = page:GetTextBox("Textbox")
-page:AddTextBox("textbox")
+
+TextBox textbox1 = page:GetTextBox("Textbox")
+textbox1:SetBackgroundColor(color:White())
+textbox1:SetText("Please enter Name")
+textbox1:SetPosition(0, 0)
+textbox1:SetSize(300, 300)
+textbox1:SetMoveFocusOnTab(true)
+
+
+page:AddTextBox("textbox1")
 
 // Text Field for testing (TextFieldIOS.java)
 page:AddBanner("Test Field Test")
 TextField textfield = page:GetTextField("TextField")
+textfield:SetMoveFocusOnTab(true)
+
+textbox1:SetNextFocus(textfield)
+textbox1:SetPreviousFocus(textfield)
+textfield:SetNextFocus(box1)
+textfield:SetPreviousFocus(box1)
+
 page:AddTextField("textfield")
 
 // Display the forms
